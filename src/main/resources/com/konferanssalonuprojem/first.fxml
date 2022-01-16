@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="614.0" style="-fx-background-color: violet;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.konferanssalonuprojem.StartController">
+   <children>
+      <Button fx:id="exitButton" layoutX="274.0" layoutY="303.0" mnemonicParsing="false" onAction="#onExitButtonClick" prefHeight="35.0" prefWidth="65.0" text="Çıkış">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="customerEnterButton" layoutX="366.0" layoutY="184.0" mnemonicParsing="false" onAction="#onCustomerEnterButtonClick" prefHeight="54.0" prefWidth="138.0" text="Müşteri Girişi">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="adminEnterButton" layoutX="99.0" layoutY="184.0" mnemonicParsing="false" onAction="#onAdminEnterButtonClick" prefHeight="54.0" prefWidth="137.0" text="Admin Girişi">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="90.0" layoutY="71.0" prefHeight="35.0" prefWidth="449.0" text="Beta Konferans Salonuna Hoşgeldiniz !">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

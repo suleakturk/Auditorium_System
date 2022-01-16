@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="445.0" prefWidth="722.0" style="-fx-background-color: plum;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.konferanssalonuprojem.AdminFile2Controller">
+   <children>
+      <Button fx:id="addConferenceButton" layoutX="81.0" layoutY="72.0" mnemonicParsing="false" onAction="#onAddConferenceButtonClick" prefHeight="38.0" prefWidth="126.0" text="Konferans ekle">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteConferenceButton" layoutX="289.0" layoutY="72.0" mnemonicParsing="false" onAction="#onDeleteConferenceButtonClick" prefHeight="38.0" prefWidth="125.0" text="Konferans sil">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="incomeButton" layoutX="492.0" layoutY="72.0" mnemonicParsing="false" onAction="#onIncomeButtonClick" prefHeight="38.0" prefWidth="153.0" text="Hasılat Görüntüle">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" layoutX="39.0" layoutY="165.0" prefHeight="200.0" prefWidth="642.0">
+        <columns>
+          <TableColumn fx:id="columnName" prefWidth="90.40002822875977" text="Adı" />
+          <TableColumn fx:id="columnSurname" prefWidth="129.6000213623047" text="Soyadı" />
+            <TableColumn fx:id="columnConference" prefWidth="226.39996337890625" text="Konferans" />
+            <TableColumn fx:id="columnSession" prefWidth="90.4000244140625" text="Seans" />
+            <TableColumn fx:id="columnSeat" prefWidth="50.4000244140625" text="Koltuk" />
+            <TableColumn fx:id="columnPay" prefWidth="49.5999755859375" text="Ücret" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

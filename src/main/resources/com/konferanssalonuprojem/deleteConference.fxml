@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="434.0" prefWidth="653.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.konferanssalonuprojem.DeleteConferenceController">
+   <children>
+      <Label layoutX="90.0" layoutY="189.0" text="Silinecek Seans :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="101.0" text="Silinecek Konferans Adı :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="conferenceComboBox" layoutX="360.0" layoutY="102.0" prefHeight="26.0" prefWidth="194.0" />
+      <ComboBox fx:id="sessionComboBox" layoutX="360.0" layoutY="190.0" onMouseClicked="#onSessionComboBoxClick" prefHeight="26.0" prefWidth="194.0" />
+      <Button fx:id="deleteButton" layoutX="471.0" layoutY="345.0" mnemonicParsing="false" onAction="#onDeleteButtonClick" prefHeight="27.0" prefWidth="100.0" text="Sil" />
+   </children>
+</AnchorPane>

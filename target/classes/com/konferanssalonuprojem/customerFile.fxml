@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="438.0" prefWidth="766.0" style="-fx-background-color: turquoise;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.konferanssalonuprojem.CustomerFileController">
+   <children>
+      <ComboBox fx:id="selectConferenceComboBox" layoutX="251.0" layoutY="197.0" prefHeight="26.0" prefWidth="189.0" />
+      <ComboBox fx:id="selectSessionComboBox" layoutX="250.0" layoutY="258.0" onMouseClicked="#onSessionButtonClick" prefHeight="26.0" prefWidth="190.0" />
+      <Label layoutX="52.0" layoutY="197.0" text="Konferans seçimi :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="258.0" text="Seans seçimi :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="continueButton" layoutX="564.0" layoutY="356.0" mnemonicParsing="false" onAction="#onContinueButtonClick" prefHeight="30.0" prefWidth="96.0" text="Satın al" />
+      <Label layoutX="52.0" layoutY="69.0" text="İsim :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="128.0" text="Soyisim :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameText" layoutX="156.0" layoutY="70.0" prefHeight="26.0" prefWidth="190.0" />
+      <TextField fx:id="surnameText" layoutX="156.0" layoutY="129.0" prefHeight="26.0" prefWidth="190.0" />
+      <ComboBox fx:id="selectSeatComboBox" layoutX="250.0" layoutY="317.0" onMouseClicked="#onSeatButtonClick" prefHeight="26.0" prefWidth="190.0" />
+      <Label layoutX="52.0" layoutY="316.0" text="Koltuk seçimi :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="599.0" layoutY="55.0" prefHeight="30.0" prefWidth="60.0" text="PERDE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button disable="true" layoutX="538.0" layoutY="111.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="42.0" style="-fx-background-color: white;" text="K1">
+         <font>
+            <Font name="Bauhaus 93" size="12.0" />
+         </font>
+      </Button>
+      <Button disable="true" layoutX="608.0" layoutY="111.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="42.0" style="-fx-background-color: white;" text="K2">
+         <font>
+            <Font name="Bauhaus 93" size="12.0" />
+         </font>
+      </Button>
+      <Button disable="true" layoutX="677.0" layoutY="111.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="42.0" style="-fx-background-color: white;" text="K3">
+         <font>
+            <Font name="Bauhaus 93" size="12.0" />
+         </font>
+      </Button>
+      <Button disable="true" layoutX="538.0" layoutY="164.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="42.0" style="-fx-background-color: white;" text="K4">
+         <font>
+            <Font name="Bauhaus 93" size="12.0" />
+         </font>
+      </Button>
+      <Button disable="true" layoutX="608.0" layoutY="164.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="42.0" style="-fx-background-color: white;" text="K5">
+         <font>
+            <Font name="Bauhaus 93" size="12.0" />
+         </font>
+      </Button>
+      <Button disable="true" layoutX="677.0" layoutY="164.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="42.0" style="-fx-background-color: white;" text="K6">
+         <font>
+            <Font name="Bauhaus 93" size="12.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="fullPayCheckBox" layoutX="575.0" layoutY="240.0" mnemonicParsing="false" onAction="#onPayButtonClick" text="Tam Ücreti">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="studentPayCheckBox" layoutX="575.0" layoutY="285.0" mnemonicParsing="false" onAction="#onPayButtonClick" text="Öğrenci Ücreti">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+   </children>
+</AnchorPane>
